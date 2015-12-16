@@ -1,5 +1,6 @@
 .content-info-content.form {
-    min-height: 49em;
+    display: inline-block;
+    padding-bottom: 2.4em;
 }
 
 .main-form {
