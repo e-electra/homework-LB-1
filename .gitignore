@@ -1,0 +1,5 @@
+app/bower
+app/okna
+node_modules
+*.DS_Store
+*.htaccess

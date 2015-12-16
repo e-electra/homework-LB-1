@@ -1,0 +1,131 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-1111_25 {
+    width: 33px;
+    height: 30px;
+    background-position: -5px -5px;
+}
+
+.sprite-1111_30 {
+    width: 33px;
+    height: 30px;
+    background-position: -48px -5px;
+}
+
+.sprite-1111_38 {
+    width: 33px;
+    height: 30px;
+    background-position: -91px -5px;
+}
+
+.sprite-1111_39 {
+    width: 33px;
+    height: 30px;
+    background-position: -134px -5px;
+}
+
+.sprite-22_28 {
+    width: 33px;
+    height: 30px;
+    background-position: -5px -45px;
+}
+
+.sprite-33_39 {
+    width: 33px;
+    height: 30px;
+    background-position: -48px -45px;
+}
+
+.sprite-33_42 {
+    width: 33px;
+    height: 30px;
+    background-position: -91px -45px;
+}
+
+.sprite-55_38 {
+    width: 33px;
+    height: 30px;
+    background-position: -134px -45px;
+}
+
+.sprite-77_11 {
+    width: 33px;
+    height: 30px;
+    background-position: -5px -85px;
+}
+
+.sprite-77_14 {
+    width: 33px;
+    height: 30px;
+    background-position: -48px -85px;
+}
+
+.sprite-999_03 {
+    width: 27px;
+    height: 26px;
+    background-position: -91px -85px;
+}
+
+.sprite-999_06 {
+    width: 27px;
+    height: 26px;
+    background-position: -128px -85px;
+}
+
+.sprite-999_08 {
+    width: 27px;
+    height: 26px;
+    background-position: -91px -121px;
+}
+
+.sprite-qw_03 {
+    width: 33px;
+    height: 30px;
+    background-position: -128px -121px;
+}
+
+.sprite-qw_06 {
+    width: 33px;
+    height: 30px;
+    background-position: -177px -5px;
+}
+
+.sprite-qw_08 {
+    width: 33px;
+    height: 30px;
+    background-position: -177px -45px;
+}
+
+.sprite-qw_10 {
+    width: 33px;
+    height: 30px;
+    background-position: -171px -85px;
+}
+
+.sprite-qw_16 {
+    width: 33px;
+    height: 30px;
+    background-position: -5px -125px;
+}
+
+.sprite-qw_18 {
+    width: 33px;
+    height: 30px;
+    background-position: -48px -125px;
+}
+
+.sprite-qw_19 {
+    width: 33px;
+    height: 30px;
+    background-position: -171px -125px;
+}
+
+.sprite-qw_20 {
+    width: 33px;
+    height: 30px;
+    background-position: -5px -165px;
+}

@@ -1,0 +1,101 @@
+.content-info-content.form {
+    min-height: 49em;
+}
+
+.main-form {
+	width: 62%;
+	margin: 2em auto;
+	display: block;
+}
+
+.main-form-label {
+	font-family: 'open_sansregular';
+	font-size: 0.875em;
+	margin-bottom: 1.06em;
+}
+
+.main-form-label.name {
+	width: 47%;
+	float: left;
+}
+
+.main-form-label.email {
+	width: 47%;
+	float: right;
+}
+
+.main-form-label.area {
+	float: left;
+	width: 100%;
+}
+
+.main-form-label.capt {
+	float: left;
+	width: 100%;	
+}
+
+.main-form-input {
+    width: 100%;
+    padding: 1.2em 0;
+    font-size: 0.75em;
+    font-family: 'open_sanslight';
+    text-indent: 0.6em;
+    margin: 0.5em auto;
+    border-radius: 4px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #d6d5d3;
+}
+
+.main-form-captcha {
+	float: left;
+	width: 191px;
+	height: 79px;
+	background: #fff;
+	margin-top: 0.75em;
+	border: 1px solid #d6d5d3;
+	border-radius: 4px;
+}
+
+.main-form-input.capt {
+	float: right;
+	width: 47%;
+	margin-top: 1.875em;
+}
+
+.main-form-input.area {
+	resize: none;
+}
+
+.main-form-btn {
+	padding: 0.625em 1.7em;
+	border-radius: 4px;
+	border-style: solid;
+	font-size: 0.875em;
+	font-family: 'open_sanssemibold';
+	margin: 1em auto;
+}
+
+.main-form-btn.sub {
+	background: #7de8cd;
+    background: linear-gradient(to bottom, #7de8cd 0%,#5ecfb3 50%,#40b89a 100%);
+    border: 1px solid #2fa185;
+    border-width: 1px;
+    border-image-slice: 1;
+    box-shadow: inset 0px 1px 0px 0px rgba(165,239,221,1);
+    border-radius: 4px;
+    overflow: hidden;
+    color: #1e7465;
+    text-shadow: 1px 1px 1px #fff;
+    float: left;
+    margin-left: 2em;
+}
+
+.main-form-btn.res {
+	float: right;
+	background: #fbfafa;
+	background: linear-gradient(to bottom, #fbfafa 0%,#f1efee 48%,#e6e4e3 100%);
+	border: 1px solid #d2d2d2;
+	text-shadow: 1px 1px 1px #fff;
+	margin-right: 2.2em;
+}

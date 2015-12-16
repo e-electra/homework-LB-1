@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name=viewport content="width=device-width, initial-scale=1">-->
+	<meta http-equiv="">
+	<title>Главная страница</title>
+	<!-- CSS -->
+	<!--<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">-->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/info.css">
+	<link rel="stylesheet" type="text/css" href="css/works.css">
+	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+			<header class="header">
+				<div class="container-head">
+					<a href="#" class="logotype">
+						<img src="images/logo.png" height="73" width="103" alt="Logotype" class="logo">
+					</a>
+					<ul class="social">
+						<li class="social-item"><a class="social-link fb" href="#">facebook</a></li>
+						<li class="social-item"><a class="social-link vk" href="#">vkontakte</a></li>
+						<li class="social-item"><a class="social-link tw" href="#">twitter</a></li>
+						<li class="social-item"><a class="social-link git" href="#">github</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="container">
+				<aside class="sidebar">
+					<nav class="navigation">
+						<ul class="navigate">
+							<li class="navigate-item"><a href="index.html" class="navigate-link">Обо мне</a></li>
+							<li class="navigate-item"><a href="myworks.html" class="navigate-link active">Мои Работы</a></li>
+							<li class="navigate-item"><a href="contactme.html" class="navigate-link">Обратная связь</a></li>
+						</ul>
+					</nav>
+					<address class="contact">
+						<ul class="contact-list">
+							<li class="contact-header"><span class="contact-header-element">Контакты</span></li>
+							<li class="contact-item"><a href="" class="contact-link mail">pochta@mail.ru</a></li>
+							<li class="contact-item"><a href="" class="contact-link tel">+7819760529</a></li>
+							<li class="contact-item"><a href="" class="contact-link nick">nickname</a></li>
+						</ul>
+					</address>
+				</aside>
+				<section class="content">
+					<article class="content-info">
+							<div class="content-info-header work">
+								Мои работы
+							</div>
+							<div class="content-info-content clearfix work">
+								<div class="content-work-item first">
+									<div class="content-work-item-img-holder">
+										<a href="http://176.32.230.251/mydomainwork.com/fitness/" class="content-work-item-pic-link">
+											<span class="work-title">Fitness.ru</span>
+										</a>
+										<img src="images/fitness.png" alt="" class="content-work-item-img">
+									</div>
+									<a href="#" class="content-work-item-link">
+										fitness.ru
+									</a>
+									<div class="content-work-item-description">
+										description
+									</div>
+								</div>
+								<div class="content-work-item second">
+									<div class="content-work-item-img-holder">
+										<a href="http://ermolaevaekaterina.ru/okna/" class="content-work-item-pic-link">
+											<span class="work-title">Okna.ru</span>
+										</a>
+										<img src="images/okna.png" alt="" class="content-work-item-img">
+									</div>
+									<a href="#" class="content-work-item-link">
+										okna.ru
+									</a>
+									<div class="content-work-item-description">
+										description
+									</div>
+								</div>
+								<div class="content-work-item third">
+									<div class="content-work-item-img-holder">
+										<a href="http://176.32.230.251/mydomainwork.com/php/" class="content-work-item-pic-link">
+											<span class="work-title">Weather.com</span>
+										</a>	
+										<img src="images/weather.png" alt="" class="content-work-item-img">
+									</div>
+									<a href="#" class="content-work-item-link">
+										weather.com
+									</a>
+									<div class="content-work-item-description">
+										description
+									</div>																	
+								</div>
+								<div class="content-work-item first">
+									<div class="content-work-item-img-holder">
+										<a href="http://tuliniekka.fi" class="content-work-item-pic-link">
+											<span class="work-title">Tuliniekka.fi</span>
+										</a>
+										<img src="images/svechi.png" alt="" class="content-work-item-img">	
+									</div>
+									<a href="#" class="content-work-item-link">tuliniekka.fi</a>
+									<div class="content-work-item-description">
+										description
+									</div>										
+								</div>
+								<div class="content-work-item second">
+									<div class="content-work-item-img-holder">
+										<a href="#" class="content-work-item-pic-link">
+											<span class="work-title">Mysite.ru</span>
+										</a>
+										<img src="images/mysite.png" alt="" class="content-work-item-img">
+									</div>
+									<a href="#" class="content-work-item-link">mysite.ru</a>
+									<div class="content-work-item-description">
+										description
+									</div>									
+								</div>
+								<div class="content-work-item third thumbnail">
+									<div class="content-work-item-img-holder">
+										<a href="#" class="content-work-item-add-item">
+											<span class="content-work-item-add-text clearfix" id="new-item">Добавить проект</span>
+										</a>
+									</div>								
+								</div>
+							</div>
+					</article>
+			    </section>
+			    <div class="project" id="project-popup">
+					<form class="project-form">
+						<div class="form-wrap">
+							<label class="project-form-label name" for="name">Название проекта</label>
+							<input class="project-form-input" type="text" name="names" id="names" placeholder="Введите название">	
+						</div>
+						<div class="form-wrap">
+							<label class="project-form-label picture" for="picture">Картинка проекта</label>
+							<div class="mask-wrap">
+								<input class="project-form-input" type="text" name="picture" id="picture" placeholder="Загрузите изображение" disabled>
+								<button class="project-form-button"></button>
+							</div>				
+							<input id="my_file" class="custom-file-input" type="file" name="my_file">			
+						</div>			
+						<div class="form-wrap">
+							<label class="project-form-label links" for="links">URL проекта</label>
+							<input class="project-form-input" type="text" name="links" id="links" placeholder="Добавьте ссылку">
+						</div>				
+						<div class="form-wrap">
+							<label class="project-form-label areas" for="areas">Описание</label>
+							<textarea class="project-form-input area" type="text" name="areas" id="areas" placeholder="Пара слов о вашем проекте" cols="30" rows="6"></textarea>
+						</div>			
+						<button class="project-form-button2">Добавить</button>
+						<div class="close-button b-close"></div>
+					</form>
+				</div>
+		  </div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="lock-login">
+				<a href="#" class="lock">Вход</a>
+				<span class="lock-tekst">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</span>
+			</div>
+		</div>
+	</footer>
+	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>

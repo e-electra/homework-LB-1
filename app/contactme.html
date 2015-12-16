@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+	<meta charset="UTF-8">
+	<!--<meta name=viewport content="width=device-width, initial-scale=1">-->
+	<meta http-equiv="">
+	<title>Главная страница</title>
+	<!-- CSS -->
+	<!--<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">-->
+	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/info.css">
+	<link rel="stylesheet" type="text/css" href="css/works.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
+</head>
+<body>
+	<div class="wrapper">
+			<header class="header">
+				<div class="container-head">
+					<a href="#" class="logotype">
+						<img src="images/logo.png" height="73" width="103" alt="Logotype" class="logo">
+					</a>
+					<ul class="social">
+						<li class="social-item"><a class="social-link fb" href="#">facebook</a></li>
+						<li class="social-item"><a class="social-link vk" href="#">vkontakte</a></li>
+						<li class="social-item"><a class="social-link tw" href="#">twitter</a></li>
+						<li class="social-item"><a class="social-link git" href="#">github</a></li>
+					</ul>
+				</div>
+			</header>
+			<div class="container">
+				<aside class="sidebar">
+					<nav class="navigation">
+						<ul class="navigate">
+							<li class="navigate-item"><a href="index.html" class="navigate-link">Обо мне</a></li>
+							<li class="navigate-item"><a href="myworks.html" class="navigate-link">Мои Работы</a></li>
+							<li class="navigate-item"><a href="contactme.html" class="navigate-link active">Обратная связь</a></li>
+						</ul>
+					</nav>
+					<address class="contact">
+						<ul class="contact-list">
+							<li class="contact-header"><span class="contact-header-element">Контакты</span></li>
+							<li class="contact-item"><a href="" class="contact-link mail">pochta@mail.ru</a></li>
+							<li class="contact-item"><a href="" class="contact-link tel">+7819760529</a></li>
+							<li class="contact-item"><a href="" class="contact-link nick">nickname</a></li>
+						</ul>
+					</address>
+				</aside>
+				<section class="content">
+					<article class="content-info">
+							<div class="content-info-header form">
+								У вас интересный проект? Напишите мне!
+							</div>
+							<div class="content-info-content form">
+								<form class="main-form">
+									<label class="main-form-label name" for="name">Имя
+										<input class="main-form-input" id="name" name="name" type="text" placeholder="Как к Вам обращаться">
+									</label>
+									<label class="main-form-label email" for="email">E-mail
+										<input class="main-form-input" id="email" name="email" type="email" placeholder="Куда мне писать">
+									</label>
+									<label class="main-form-label area" for="message">Сообщение
+										<textarea class="main-form-input area" name="message" id="message" cols="30" rows="10" placeholder="Кратко в чем суть"></textarea>
+									</label>
+									<label class="main-form-label capt" for="capt">Введите код, указанный на картинке
+										<div class="main-form-captcha"></div>
+										<input class="main-form-input capt" id="capt" type="text" placeholder="Введите код">
+									</label>
+									<button class="main-form-btn sub" type="submit">Отправить</button>
+									<button class="main-form-btn res" type="reset">Очистить</button>
+								</form>
+							</div>
+					</article>
+			    </section>
+		  </div>
+	</div>
+	<footer class="footer">
+		<div class="container">
+			<div class="lock-login">
+				<a href="#" class="lock">Вход</a>
+				<span class="lock-tekst">© 2015. Это мой сайт, пожалуйста, не копируйте и не воруйте его!</span>
+			</div>
+		</div>
+	</footer>
+	<script src="bower/jquery/dist/jquery.js"></script>
+	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
