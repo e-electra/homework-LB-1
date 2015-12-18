@@ -7,6 +7,7 @@
 	<title>Главная страница</title>
 	<!-- CSS -->
 	<!--<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">-->
+	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/info.css">
@@ -129,28 +130,30 @@
 					</article>
 			    </section>
 			    <div class="project" id="project-popup">
-					<form class="project-form">
+					<form class="project-form" id="new-project">
+						<div class="server-mes error-mes"></div>
+						<div class="server-mes success-mes"></div>
 						<div class="form-wrap">
 							<label class="project-form-label name" for="name">Название проекта</label>
-							<input class="project-form-input" type="text" name="names" id="names" placeholder="Введите название">	
+							<input class="project-form-input" type="text" name="names" id="names" placeholder="Введите название" qtip-content="введите название" qtip-position="left">	
 						</div>
 						<div class="form-wrap">
 							<label class="project-form-label picture" for="picture">Картинка проекта</label>
 							<div class="mask-wrap">
-								<input class="project-form-input" type="text" name="picture" id="picture" placeholder="Загрузите изображение" disabled>
+								<input class="project-form-input" type="text" name="picture" id="picture" placeholder="Загрузите изображение" disabled  qtip-content="изображение" qtip-position="left">
 								<button class="project-form-button"></button>
 							</div>				
 							<input id="my_file" class="custom-file-input" type="file" name="my_file">			
 						</div>			
 						<div class="form-wrap">
 							<label class="project-form-label links" for="links">URL проекта</label>
-							<input class="project-form-input" type="text" name="links" id="links" placeholder="Добавьте ссылку">
+							<input class="project-form-input" type="text" name="links" id="links" placeholder="Добавьте ссылку"  qtip-content="ссылка на проект" qtip-position="left">
 						</div>				
 						<div class="form-wrap">
 							<label class="project-form-label areas" for="areas">Описание</label>
-							<textarea class="project-form-input area" type="text" name="areas" id="areas" placeholder="Пара слов о вашем проекте" cols="30" rows="6"></textarea>
+							<textarea class="project-form-input area" type="text" name="areas" id="areas" placeholder="Пара слов о вашем проекте" cols="30" rows="6"  qtip-content="описание проекта" qtip-position="left"></textarea>
 						</div>			
-						<button class="project-form-button2">Добавить</button>
+						<button type="submit" class="project-form-button2">Добавить</button>
 						<div class="close-button b-close"></div>
 					</form>
 				</div>
@@ -165,8 +168,11 @@
 		</div>
 	</footer>
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
+	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<script src="js/validate.js"></script>
+	<script src="js/add_project.js"></script>
 	<script src="js/main.js"></script>
 </body>
 </html>

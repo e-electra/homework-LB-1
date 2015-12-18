@@ -1,7 +1,28 @@
 $(document).ready(function($) {
+
+	if(typeof console === 'undefined' || typeof console.log === 'undefined') {
+		var console = {};
+		console.log = function(){
+
+		};
+	}
+
 	$('.content-info-job-item:last').css('border-bottom', 'none');
 	$('.content-info-edu-item:last').css('border-bottom', 'none');
-	$('input, textarea').placeholder({customClass:'my-placeholder'});
+
+	$('.no-backgroundsize .content-work-item').each(function(){
+		$(this).on('mouseover', function(){
+			$(this).children($('.no-backgroundsize .content-work-item-pic-link .work-title')).css('display', 'block');
+		});
+		$(this).on('mouseout', function(){
+			$(this).children($('.no-backgroundsize .content-work-item-pic-link .work-title')).css('display', 'block');
+		});
+	});
+
+	//$('input, textarea').placeholder({customClass:'my-placeholder'});
+	$('input, textarea').placeholder();
+
+	console.log($('input, textarea'));
 	$('.custom-file-input').on('change', function(){
 		realVal = $(this).val();
 		lastIndex = realVal.lastIndexOf('\\') + 1;
@@ -11,30 +32,3 @@ $(document).ready(function($) {
 		}
 	});
 });
-
-var mainModule = (function (){
-	
-	var init = function () {
-		_setUpListners();
-	}
-
-	var _setUpListners = function () {
-		$('#new-item').on('click', _showProject);
-	};
-
-	var _showProject = function (ev) {
-		console.log("eeee");
-		ev.preventDefault();
-		$('#project-popup').bPopup({
-			speed: 650,
-			transition: 'slideDown'
-		});
-	};
-
-	return {
-		init : init
-	};
-
-})();
-
-mainModule.init();

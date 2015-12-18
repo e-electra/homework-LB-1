@@ -86,6 +86,24 @@
 	        transition: all 0.3s ease-in-out;
 }
 
+.no-backgroundsize .content-work-item-pic-link .work-title {
+	position: absolute;
+	z-index: 4;
+	display: none;
+    left: 0;
+    width: 100%;
+    text-align: center;
+	color: #ffffff;
+}
+
+.no-backgroundsize .content-work-item-pic-link:hover .work-title {
+ 	display: block;
+}
+
+.content-work-item-pic-link:hover {
+	color: red;
+}
+
 .content-work-item-pic-link:hover .work-title {
 	opacity: 1;
 	-webkit-transition: all 0.3s ease-in-out;
@@ -201,6 +219,14 @@
 	display: block;
 }
 
+.server-mes {
+	width: 100%;
+	float: left;
+	border: 1px solid red;
+	font-size: 1em;
+	display: none;
+	height: 20px;
+}
 
 
 .project-form-button {
@@ -216,6 +242,19 @@
 	            linear-gradient(to bottom, #fcfcfc 0%,#f5f3f2 49%,#e5e3e2 100%);
 	box-sizing: border-box;
 }
+
+.no-backgroundsize .project-form-button {
+	background-image: url(../images/spritesheet2.png);
+	background-position: -292.5px 0px;
+	background-color: #fcfcfc;
+	display: block;
+	float: left;
+	width: 19%;
+	height: 2.7em;
+	margin: 0.35em -0.2em;
+
+}
+
 
 
 .project-form-button1 {	

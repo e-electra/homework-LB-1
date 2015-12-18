@@ -3,7 +3,8 @@
 * {
 	box-sizing: border-box;
 	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;	
+	-moz-box-sizing: border-box;
+	outline: none;
 }
 
 html {
@@ -465,4 +466,120 @@ body {
 	text-align: center;
 	font-family: 'open_sanslight';
 	font-size: 0.75em;
+}
+
+/*.qtip-mystyle {
+	background-color: #d8825e;
+	border: none;
+	overflow: hidden;
+    border-image: linear-gradient(to bottom, #f19a7c 0%, #cb6945 100%);
+	background: linear-gradient(to bottom, #f3a58b 0%,#d8825e 100%);
+    box-sizing: border-box;
+    border-radius: 55px;
+    background-origin: border-box;
+    background-clip: border-box;
+    border-image-slice: 1;
+}*/
+
+.qtip-mystyle {
+	background-color: #d67c5a;
+    background: linear-gradient(to bottom, #f3a287 0%, #e69073 50%, #d67c5a 100%);
+    /*border-image: linear-gradient(to bottom, #f19a7c 0%, #cb6945 100%);*/
+    border: 1px solid #d67c5a;
+    border-image-slice: 1;
+    border-radius: 5px;
+    box-shadow: inset 0px 1px 0px 0px rgba(247,192,173,1);
+    color: #9a4e32;
+    text-shadow: 1px 1px 1px #fff;
+    border-radius: 5px;
+}
+
+.qtip-mystyle canvas {
+	display: none;
+}
+
+.no-backgroundsize .qtip-mystyle canvas {
+	display: block;
+}
+
+.qtip-mystyle:before {
+    content: '';
+    display: block;
+    position: absolute;
+    right: -7px;
+    width: 3px;
+    z-index: 2;
+    top: 25%;
+    right: -4.1px;
+    height: 7.5px;
+    border-radius: 0px 0 2px 0;
+    transform: rotate(-50deg);
+    background-color: #d67c5a;
+    background: linear-gradient(to left, #eb987c 0% , #eb987c 26%, transparent 105%);
+    border-right: 1px solid #d67c5a;
+}
+
+.no-backgroundsize .qtip-mystyle:before {
+	display: none;
+}
+
+.no-backgroundsize .qtip-mystyle:after {
+	display: none;
+}
+
+.qtip-mystyle:after {
+	content: '';
+    display: block;
+    position: absolute;
+    right: -5px;
+    bottom: 29%;
+    width: 7px;
+    height: 8.5px;
+    border-radius: 0 2px 0 0px;
+    transform: rotate(41deg);
+    background-color: #d67c5a;
+    background: linear-gradient(to left, #E28D6E 0%,#e28d6e 77%, transparent 100%);
+    border-right: 1px solid #d67c5a;
+}
+
+.qtip-mystyle.qtip-pos-lc:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: -4px;
+    width: 3px;
+    z-index: 2;
+    top: 32%;
+    right: -4.1px;
+    height: 7.5px;
+    border-radius: 0px 0 0px 2px;
+    transform: rotate(50deg);
+    background-color: #d67c5a;
+    background: linear-gradient(to right, #eb987c 0% , #eb987c 26%, transparent 105%);
+    border-left: 1px solid #d67c5a;
+    border-right: 0;
+}
+
+.qtip-mystyle.qtip-pos-lc:after {
+	content: '';
+    display: block;
+    position: absolute;
+    left: -5px;
+    bottom: 35%;
+    width: 7px;
+    height: 5.5px;
+    border-radius: 2px 0px 0 0px;
+    transform: rotate(-56deg);
+    background-color: #d67c5a;
+    background: linear-gradient(to top, #E28D6E 50%,#e28d6e 100%);
+    border-left: 1px solid #d67c5a;
+    border-right: 0;
+}
+
+.no-backgroundsize .qtip-mystyle.qtip-pos-lc:before {
+	display: none;
+}
+
+.no-backgroundsize .qtip-mystyle.qtip-pos-lc:after {
+	display: none;
 }
