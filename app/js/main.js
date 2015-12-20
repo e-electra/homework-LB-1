@@ -7,6 +7,10 @@ $(document).ready(function($) {
 		};
 	}
 
+	if (!Modernizr.placeholders) {
+		$('input, textarea').placeholder();
+	};
+
 	$('.content-info-job-item:last').css('border-bottom', 'none');
 	$('.content-info-edu-item:last').css('border-bottom', 'none');
 
@@ -19,16 +23,15 @@ $(document).ready(function($) {
 		});
 	});
 
-	//$('input, textarea').placeholder({customClass:'my-placeholder'});
-	$('input, textarea').placeholder();
-
-	console.log($('input, textarea'));
-	$('.custom-file-input').on('change', function(){
-		realVal = $(this).val();
-		lastIndex = realVal.lastIndexOf('\\') + 1;
-		if (lastIndex !== -1) {
-			realVal = realVal.substr(lastIndex);
-			$(this).prev('.mask-wrap').find('#picture').val(realVal);
-		}
-	});
+		console.log($('input, textarea'));
+		$('.custom-file-input').on('change', function(){
+			console.log('input has changed');
+			var realVal = $(this).val();
+			var $input = $('#picture');
+			lastIndex = realVal.lastIndexOf('\\') + 1;
+			if (lastIndex !== -1) {
+				realVal = realVal.substr(lastIndex);
+				$input.val(realVal);
+			}
+		});
 });

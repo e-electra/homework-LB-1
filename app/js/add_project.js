@@ -7,6 +7,10 @@ var mainModule = (function (){
 	var _setUpListners = function () {
 		$('#new-item').on('click', _showProject);
 		$('#new-project').on('submit', _newProject);
+
+		$('.custom-file-input').on('change', function(){
+			$('form').find('#picture').trigger('hideTooltip');
+		});
 	};
 
 	var _showProject = function (ev) {
