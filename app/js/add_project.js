@@ -9,7 +9,7 @@ var mainModule = (function (){
 		$('#new-project').on('submit', _newProject);
 
 		$('.custom-file-input').on('change', function(){
-			$('form').find('#picture').trigger('hideTooltip');
+			$('form').find('#picture').trigger('hideTooltip').removeClass('has-error');
 		});
 	};
 
