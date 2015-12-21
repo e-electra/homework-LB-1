@@ -1,6 +1,4 @@
 <?php
-	//header("Content-Type: application/json");
-	//header("Content-Type: application/json");
 
 	$name = htmlentities(strip_tags(trim($_POST['name'])));
 	$email = htmlentities(strip_tags(trim($_POST['email'])));

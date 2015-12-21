@@ -1,5 +1,5 @@
 <?php
-	//header("Content-Type: application/json");
+
 	$name = $_POST['names'];
 	$file = $_FILES['my_file'];
 	$url = $_POST['links'];
@@ -21,7 +21,6 @@
 		$data['text'] = "Запрос прошел успешно";
 	}
 
-	//print_r($_POST);
 	header("Content-Type: application/json");
 	echo json_encode($data);
 	exit;

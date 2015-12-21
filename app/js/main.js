@@ -11,9 +11,6 @@ $(document).ready(function($) {
 		$('input, textarea').placeholder();
 	};
 
-	$('.content-info-job-item:last').css('border-bottom', 'none');
-	$('.content-info-edu-item:last').css('border-bottom', 'none');
-
 	$('.no-backgroundsize .content-work-item').each(function(){
 		$(this).on('mouseover', function(){
 			$(this).children($('.no-backgroundsize .content-work-item-pic-link .work-title')).css('display', 'block');

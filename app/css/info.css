@@ -158,10 +158,26 @@
 	margin: 2.43em auto 0;
 }
 
+.no-backgroundsize .content-info-job-item {
+	border-bottom: none;
+	border-top: 1px solid #dbdbda;
+	padding-top: 1.4em;
+	margin: 0;
+}
+
+.no-backgroundsize .content-info-job-item:first-child {
+	border-top:none;
+	padding: 0;
+}
+
 .content-info-job-item {
     margin: 0 auto 1.4em;
 	width: 100%;
     border-bottom: 1px solid #dbdbda;
+}
+
+.content-info-job-item:last-of-type {
+	border: none;
 }
 
 .content-info-job-item.clearfix {
@@ -214,9 +230,6 @@
 	margin-top: 1em;
 }
 
-.content-info-job-item:last-of-type:after {
-	visibility: hidden;
-}
 
 .content-info-job-position {
     font-family: 'open_sanssemibold';
@@ -246,6 +259,18 @@
     min-height: 5em;
     width: 100%;
 	border-bottom: 1px solid #dbdbda; 
+}
+
+.no-backgroundsize .content-info-edu-item {
+	border-bottom: none;
+	border-top: 1px solid #dbdbda;
+	padding-top: 1.4em;
+	margin: 0;
+}
+
+.no-backgroundsize .content-info-edu-item:first-child {
+	border-top:none;
+	padding: 0;
 }
 
 .content-edu-item-text {
@@ -318,8 +343,8 @@
     margin-left: 4em;
 }
 
-.content-info-edu-item:last-of-type:after {
-	visibility: hidden;
+.content-info-edu-item:last-of-type {
+	border: none;
 }
 
 .content-info-edu-place {
