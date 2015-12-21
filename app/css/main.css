@@ -19,6 +19,14 @@ body {
 	font-family: 'open_sansregular';
 }
 
+ul {
+	list-style: none;
+}
+
+li {
+	list-style-type: none;
+}
+
 .no-backgroundsize body {
 	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#DAEAAB', 
             endColorstr='#738D8A',GradientType=0);
