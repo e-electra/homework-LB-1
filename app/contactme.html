@@ -5,15 +5,30 @@
 	<!--<meta name=viewport content="width=device-width, initial-scale=1">-->
 	<meta http-equiv="">
 	<title>Главная страница</title>
-	<!-- CSS -->
-	<!--<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">-->
-	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
+
+	<!-- build:css css/vendor.min.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css css/fonts.min.css  -->
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- endbuild -->
+
+	<!-- build:css css/main.min.css  -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/info.css">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<!-- endbuild -->
+
+	<!-- build:js js/modernizr.min.js -->
 	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
+	<!-- endbuild -->
+
+	<script src='https://www.google.com/recaptcha/api.js'></script>
 </head>
 <body>
 	<div class="wrapper">
@@ -40,11 +55,11 @@
 						</ul>
 					</nav>
 					<address class="contact">
+						<div class="contact-header"><span class="contact-header-element">Контакты</span></div>
 						<ul class="contact-list">
-							<li class="contact-header"><span class="contact-header-element">Контакты</span></li>
-							<li class="contact-item"><a href="" class="contact-link mail">pochta@mail.ru</a></li>
-							<li class="contact-item"><a href="" class="contact-link tel">+7819760529</a></li>
-							<li class="contact-item"><a href="" class="contact-link nick">nickname</a></li>
+							<li class="contact-item"><a href="mailto:ermolaevakatty@yandex.ru" class="contact-link mail">ermolaevakatty</a></li>
+							<li class="contact-item"><a href="tel:+79819760529" class="contact-link tel">+7819760529</a></li>
+							<li class="contact-item"><a href="skype:ermolaevaekaterina" class="contact-link nick">ermolaevaekaterina</a></li>
 						</ul>
 					</address>
 				</aside>
@@ -55,6 +70,8 @@
 							</div>
 							<div class="content-info-content form">
 								<form id="contact-me" class="main-form">
+									<div class="server-mes error-mes"></div>
+									<div class="server-mes success-mes"></div>
 									<label class="main-form-label name" for="name">Имя
 										<input class="main-form-input" id="name" name="name" type="text" placeholder="Как к Вам обращаться" qtip-content="введите имя" qtip-position="left">
 									</label>
@@ -64,9 +81,8 @@
 									<label class="main-form-label area" for="message">Сообщение
 										<textarea class="main-form-input area" name="message" type="text" id="message" cols="30" rows="10" placeholder="Кратко в чем суть" qtip-content="ваш вопрос" qtip-position="left"></textarea>
 									</label>
-									<label class="main-form-label capt" for="capt">Введите код, указанный на картинке
-										<div class="main-form-captcha"></div>
-										<input class="main-form-input capt" id="capt" type="text" placeholder="Введите код" qtip-content="код капчи" qtip-position="right">
+									<label class="main-form-label capt" for="capt">Докажите, что Вы не робот
+										<div class="g-recaptcha" data-sitekey="6LfohBMTAAAAAOXV96zJp-9kY1YB7tFXaeNhyUdD"></div>
 									</label>
 									<button class="main-form-btn sub" type="submit">Отправить</button>
 									<button class="main-form-btn res" type="reset">Очистить</button>
@@ -84,11 +100,20 @@
 			</div>
 		</div>
 	</footer>
+	<!-- build:js js/vendor.js -->
+	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="bower/jquery.placeholder/jquery.placeholder.js"></script>
+	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js js/main.js -->	
 	<script src="js/validate.js"></script>
+	<script src="js/add_project.js"></script>
 	<script src="js/contact_me.js"></script>
 	<script src="js/main.js"></script>
+	<!-- endbuild -->
 </body>
 </html>

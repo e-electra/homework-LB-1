@@ -13,8 +13,8 @@
 		$data['status'] = 'error';
 		$data['text'] = "Заполните имя!";
 	} elseif ( $file && ($file['type'] != 'image/png' || $file['type'] != 'image/jpeg') ) {
-		$data['mes_file'] = 'Неправильный тип файла';
-		$data['mes_f_type'] = $file['type'];
+		$data['status'] = 'error';
+		$data['text'] = "Неправильный тип файла";
 	}
 	 else {
 	 	$data['status'] = 'success';

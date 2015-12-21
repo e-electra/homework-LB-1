@@ -225,15 +225,24 @@
 	border: 1px solid red;
 	font-size: 1em;
 	display: none;
-	height: 20px;
+	border-radius: 4px;
+	padding: 0.7em 0;
+    font-size: 0.87em;
+    margin: 0.5em auto;
+    text-indent: 0.6em;
 }
 
 .server-mes.success-mes {
-	border: 1px solid green;
+	border: 1px solid #49bb7b;
+	color: #49bb7b;
+    background: #bde2cd;
+    background: linear-gradient(to bottom, #bde2cd 0%,#bce1cb 50%,#bbdfc9 99%); 
 }
 
 .server-mes.error-mes {
 	border: 1px solid red;
+	color: red;
+	background: pink;
 }
 
 
@@ -241,8 +250,8 @@
 	display: block;
 	float: left;
 	width: 19%;
-	height: 2.7em;
-	margin: 0.35em -0.2em;
+	height: 2.55em;
+	margin: 0.4em -0.2em;
 	border-radius: 0 4px 4px 0;
 	border: 1px solid #b8b8b8;
 	background: #fcfcfc;

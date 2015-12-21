@@ -35,7 +35,7 @@ var mainModule = (function (){
 		ev.preventDefault();
 
 		var form = $(this),
-			url = 'http://localhost:8000/new_project.php',
+			url = 'http://ermolaevaekaterina.ru/new_project.php',
 			defObj = _ajaxForm(form, url);
 		
 

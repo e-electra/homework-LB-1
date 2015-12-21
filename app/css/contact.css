@@ -46,6 +46,16 @@
     border-width: 1px;
     border-style: solid;
     border-color: #d6d5d3;
+    -webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.main-form-input.has-error {
+    box-shadow: inset 0px 2px 0px 0px rgba(241,242,242,1),  0px 0px 1px 1px rgba(224,173,154,1);
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 .main-form-captcha {

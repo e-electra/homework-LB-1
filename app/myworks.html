@@ -5,14 +5,29 @@
 	<!--<meta name=viewport content="width=device-width, initial-scale=1">-->
 	<meta http-equiv="">
 	<title>Главная страница</title>
-	<!-- CSS -->
-	<!--<link rel="stylesheet" type="text/css" href="bower/normalize-css/normalize.css">-->
-	<link rel="stylesheet" type="text/css" href="bower/qtip2/jquery.qtip.css">
+	
+	<!-- build:css css/vendor.min.css -->
+	<!-- bower:css -->
+	<link rel="stylesheet" href="bower/normalize-css/normalize.css" />
+	<link rel="stylesheet" href="bower/qtip2/jquery.qtip.css" />
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:css css/fonts.min.css  -->
 	<link rel="stylesheet" type="text/css" href="css/fonts.css">
+	<!-- endbuild -->
+
+	<!-- build:css css/main.min.css  -->
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link rel="stylesheet" type="text/css" href="css/info.css">
 	<link rel="stylesheet" type="text/css" href="css/works.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+	<!-- endbuild -->
+
+	<!-- build:js js/modernizr.min.js -->
 	<script type="text/javascript" src="bower/modernizer/modernizr.js"></script>
+	<!-- endbuild -->
+
 </head>
 <body>
 	<div class="wrapper">
@@ -39,11 +54,11 @@
 						</ul>
 					</nav>
 					<address class="contact">
+						<div class="contact-header"><span class="contact-header-element">Контакты</span></div>
 						<ul class="contact-list">
-							<li class="contact-header"><span class="contact-header-element">Контакты</span></li>
-							<li class="contact-item"><a href="" class="contact-link mail">pochta@mail.ru</a></li>
-							<li class="contact-item"><a href="" class="contact-link tel">+7819760529</a></li>
-							<li class="contact-item"><a href="" class="contact-link nick">nickname</a></li>
+							<li class="contact-item"><a href="mailto:ermolaevakatty@yandex.ru" class="contact-link mail">ermolaevakatty</a></li>
+							<li class="contact-item"><a href="tel:+79819760529" class="contact-link tel">+7819760529</a></li>
+							<li class="contact-item"><a href="skype:ermolaevaekaterina" class="contact-link nick">ermolaevaekaterina</a></li>
 						</ul>
 					</address>
 				</aside>
@@ -167,12 +182,20 @@
 			</div>
 		</div>
 	</footer>
+	<!-- build:js js/vendor.js -->
+	<!-- bower:js -->
 	<script src="bower/jquery/dist/jquery.js"></script>
-	<script src="js/jquery.placeholder.min.js"></script>
+	<script src="bower/jquery.placeholder/jquery.placeholder.js"></script>
 	<script src="bower/bPopup/jquery.bpopup.js"></script>
 	<script src="bower/qtip2/jquery.qtip.js"></script>
+	<!-- endbower -->
+	<!-- endbuild -->
+
+	<!-- build:js js/main.js -->	
 	<script src="js/validate.js"></script>
 	<script src="js/add_project.js"></script>
+	<script src="js/contact_me.js"></script>
 	<script src="js/main.js"></script>
+	<!-- endbuild -->
 </body>
 </html>
